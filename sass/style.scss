@@ -1,5 +1,5 @@
 /*
-    Theme Name: Template Theme
+    Theme Name: Dogua Shop
     Author: William Souza
 
  VARIABLES */
@@ -26,7 +26,7 @@ body {
     a, a:visited, a:hover {
         text-decoration: none;
         color: $color_secondary_dark;
-        font-weight: bold;
+        text-transform: capitalize;
     }
         
 }
@@ -35,13 +35,14 @@ body {
 /* HEADER */
 
 header {
-    padding: 20px 0 10px 0;
+    padding: 15px 0 10px 20px;
     display: flex;
-	border-bottom: 1px solid $color_secondary;
-    text-align: center;
-    justify-content: center;
 	width: 100%;
 	z-index: 999;
+
+    .navigation {
+        margin-top: 20px;
+    }
 
     ul li {
         display: inline;
@@ -49,15 +50,15 @@ header {
     }
 
     a, a:visited {
-        color: $color_secondary_dark;
         transition: all .2s ease;
+        padding-bottom: 38px;
         border-bottom: 2px solid transparent;
     }
 
     a:hover {
         text-decoration: none;
         color: $color_secondary;
-        border-bottom: 2px solid #8257e5;
+        border-bottom: 2px solid $color_secondary;
     }
 
 }

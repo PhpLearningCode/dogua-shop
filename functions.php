@@ -18,3 +18,5 @@ function include_bootstrap() {
 }
 
 add_action('wp_enqueue_scripts', 'include_bootstrap');
+
+add_theme_support('custom-header');
