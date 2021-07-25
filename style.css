@@ -58,14 +58,19 @@ footer {
 }
 
 /* INDEX */
+.container {
+	display: flex;
+	width: 100%;
+	margin-left: -10px;
+}
+
 .banner {
 	display: flex;
 	flex-direction: row;
-	margin-left: -120px;
 }
 
 .banner img {
-	width: 550px;
+	width: 672px;
 	height: 500px;
 }
 
