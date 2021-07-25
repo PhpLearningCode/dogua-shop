@@ -79,6 +79,7 @@ footer {
 
 .container {
     display: flex;
+    flex-direction: column;
     width: 100%;
     margin-left: -10px;
 }
@@ -91,6 +92,17 @@ footer {
     img {
         width: 672px;
         height: 500px;
+    }
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+
+    a {
+        margin-left: 20px;
     }
 }
 
