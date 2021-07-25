@@ -1,5 +1,5 @@
     <?php wp_footer(); ?>
-    <footer class="sticky-bottom">
+    <footer>
         <p>Feito por William Souza</p>
     </footer>
     </body>
