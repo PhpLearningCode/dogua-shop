@@ -8,9 +8,13 @@
 
     <div class="products"> 
         <?php  
+            global $paged;
+            $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+  
             $args = array(
                 'post_type'      => 'product',
                 'posts_per_page' => 04,
+                'paged' => $paged
             );
 
             $loop = new WP_Query( $args );
@@ -23,6 +27,16 @@
 
             wp_reset_query();
         ?>
+        
+        <nav>
+            <ul>
+                <li><?php previous_posts_link( '&laquo; PREV', $loop->max_num_pages) ?></li> 
+                <li><?php next_posts_link( 'NEXT &raquo;', $loop->max_num_pages) ?></li>
+            </ul>
+        </nav>
+
+        <?php wp_reset_postdata(); ?>
+    
     </div>
     
 </div>
