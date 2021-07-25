@@ -10,7 +10,7 @@
         <?php  
             $args = array(
                 'post_type'      => 'product',
-                'posts_per_page' => 10,
+                'posts_per_page' => 04,
             );
 
             $loop = new WP_Query( $args );
