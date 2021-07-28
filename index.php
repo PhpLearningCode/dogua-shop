@@ -30,8 +30,8 @@
         
         <nav>
             <ul>
-                <li><?php previous_posts_link( '&laquo; PREV', $loop->max_num_pages) ?></li> 
-                <li><?php next_posts_link( 'NEXT &raquo;', $loop->max_num_pages) ?></li>
+                <li><?php previous_posts_link( '&laquo;', $loop->max_num_pages) ?></li> 
+                <li><?php next_posts_link( '&raquo;', $loop->max_num_pages) ?></li>
             </ul>
         </nav>
 
